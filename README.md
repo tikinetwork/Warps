@@ -6,7 +6,7 @@
 |--------------------------|-----------------------------|
 | `/setwarp <name>` | Saves the current location |
 | `/delwarp <name>` | Deletes the specified location |
-| `/warp [name]` | Teleports you to the specified location |
+| `/warp <name>` | Teleports you to the specified location |
 | `/warps` | Show all available locations |
 
 ## Permissions
