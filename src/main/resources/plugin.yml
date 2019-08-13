@@ -1,0 +1,39 @@
+name: Warps
+version: ${project.version}
+main: dev.foolen.warps.warps.WarpsPlugin
+api-version: 1.13
+
+commands:
+  setwarp:
+    usage: /<command>
+    description: Saves the current location
+  delwarp:
+    usage: /<command>
+    description: Deletes the specified location
+  warp:
+    usage: /<command>
+    description: Teleports you to the specified location
+  warps:
+    usage: /<command>
+    description: Show all available locations
+
+permissions:
+  warps.*:
+    description: Gives access to all warps commands
+    children:
+      - warps.setwarp
+      - warps.delwarp
+      - warps.warp
+      - warps.warps
+  warps.setwarp:
+    description: Gives access to the /setwarp command
+    default: op
+  warps.delwarp:
+    description: Gives access to the /delwarp command
+    default: op
+  warps.warp:
+    description: Gives access to the /warp command
+    default: op
+  warps.warps:
+    description: Gives access to the /warps command
+    default: op
